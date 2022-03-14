@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+*{box-sizing: border-box;}
+ body{font-family: Verdana, sans-serif;}
+.mySlides{display: none;}
+img{vertical-align: middle;}
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin:auto;
+}
+
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 50px;
+    text-align: center;
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding:  8px 12px;
+    position:absolute;
+    top: 0;
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active{
+    background-color: #717171;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration:1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to  {opacity: 1;}
+}
+
+@media only screen and (max-width: 300px){
+    .text{font-size: 11px;}
+}
+body{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: wheat;
+}
+h1{
+    text-align: center;
+    display: flexbox;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-style: normal;
+
+}
+a:link{
+    color: black;
+}
+p{
+    font-size: 30px;
+    font-style: normal;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+small{
+    font-size: smaller;
+    text-align: center;
+    background-image: -moz-repeating-radial-gradient();
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.image1{
+    border-radius: 200px;
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.6;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.image2{
+    opacity: 0.6;
+    max-width: 100%;
+    border-radius: 200px;                                                                                                                                                                                                                                                                                                                                     00px;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+h6{
+    font-size: 20px;
+    text-align: center;
+
+}
+.image3{
+    border-radius: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    filter: grayscale(100%);
+}
+.image4{
+    border-radius: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.image5{
+    border-radius: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    filter: grayscale(100%);
+}
+.image1:hover{
+    transform: scaleX(-1);
+}
+/*DROP DOWN BUTTON*/
+.dropbtn{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: 30pt;
+    cursor: progress;
+
+}
+/*DROPDOW BUTTON ON HOVER  AND FOCUS*/
+.dropbtn{
+    position: relative;
+    display: inline-block;
+
+}
+/* dropdown content hidden by default*/
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:orchid;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+/* links inside dropdown*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* change the color of dropdown list on hover*/
+.dropdown-content a:hover{
+    background-color: lightblue;
+
+}
+/* show the dropdown menu, use javascript to add this class to the dropdown menu
+.dropdown-content container when the user clicks onthe dropdown button)*/
+.show{
+    display: block;
+}
+footer{
+    text-align: center;
+}
